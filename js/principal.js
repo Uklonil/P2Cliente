@@ -98,11 +98,13 @@ function altaAlumno(oEvento)
 /*-----------------------------------------------------------Auxiliares-----------------------------------------------------------*/
 function validaciones(oForm)
 {
-	var bValido = true;
-	for(var i=0;i<oForm.elements.length-1;i++)
+	var bValido=true;
+	for(var i=1;i<oForm.elements.length-1;i++)
 	{
 		if(oForm.elements[i].value.trim()=="")
+		{
 			bValido=false;
+		}
 	}
 	return bValido;
 }
@@ -131,8 +133,8 @@ function mensajeError(oForm)
 	  "hideEasing": "linear",
 	  "showMethod": "fadeIn",
 	  "hideMethod": "fadeOut"
-	}
+	};
 	
-	Command: toastr["error"]("Error",sError)
+	Command: toastr["error"]("Error",sError);
 }
 /*-----------------------------------------------------------Fin Auxiliares-----------------------------------------------------------*/
