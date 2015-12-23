@@ -98,7 +98,6 @@ function altaAlumno(oEvento)
 /*-----------------------------------------------------------Auxiliares-----------------------------------------------------------*/
 function validaciones(oForm)
 {
-<<<<<<< HEAD
 	var bValido=true;
 	for(var i=1;i<oForm.elements.length-1;i++)
 	{
@@ -106,13 +105,6 @@ function validaciones(oForm)
 		{
 			bValido=false;
 		}
-=======
-	var bValido = true;
-	for(var i=0;i<oForm.elements.length-1;i++)
-	{
-		if(oForm.elements[i].value.trim()=="")
-			bValido=false;
->>>>>>> refs/remotes/origin/master
 	}
 	return bValido;
 }
