@@ -9,7 +9,8 @@ var oAcademia = new Academia();
 var altaAlu =document.querySelectorAll('.dropdown-menu')[0].children[0].children[0];
 altaAlu.addEventListener("click",mostrarAltaAlumno,false);
 
-
+var formAltAlu = document.forAltAlu.enviar;
+formAltAlu.addEventListener("click",altaAlumno,false);	
 
 
 
@@ -23,8 +24,6 @@ function mostrarAltaAlumno(oEvento) {
 
 		var oFormu = document.getElementById("forAltAlu");
 		oFormu.style.display = "block";
-
-
 	}
 }
 
@@ -39,7 +38,8 @@ function ocultarAltaAlumno()
 /*-----------------------------------------------------------Fin Funciones gr�ficas-----------------------------------------------------------*/
 
 /*-----------------------------------------------------------Alta Alumno-----------------------------------------------------------*/
-function altaAlumno(oEvento){
+function altaAlumno(oEvento)
+{
 	var oE = oEvento || window.event;
 	var oForm = document.getElementById("forAltAlu");
 	if(validaciones(oForm))
@@ -49,12 +49,46 @@ function altaAlumno(oEvento){
 		var sApellidos = oForm.txtApellidos.value.trim();
 		oAcademia.altaAlumno(sDni,sNombre,sApellidos);
 	}
+	else
+	{
+		mensajeError();
+	}
 }
 /*-----------------------------------------------------------Fin Alta Alumno-----------------------------------------------------------*/
 
 /*-----------------------------------------------------------Auxiliares-----------------------------------------------------------*/
-function validaciones(oForm){
+function validaciones(oForm)
+{
 	//TODO
 	return false;
+}
+
+function mensajeError()
+{
+	var sError="";
+	
+	
+	
+	
+	
+	toastr.options = {
+	  "closeButton": false,
+	  "debug": false,
+	  "newestOnTop": false,
+	  "progressBar": false,
+	  "positionClass": "toast-bottom-full-width",
+	  "preventDuplicates": false,
+	  "onclick": null,
+	  "showDuration": "300",
+	  "hideDuration": "1000",
+	  "timeOut": "5000",
+	  "extendedTimeOut": "1000",
+	  "showEasing": "swing",
+	  "hideEasing": "linear",
+	  "showMethod": "fadeIn",
+	  "hideMethod": "fadeOut"
+	}
+	
+	Command: toastr["error"]("Error",sError)
 }
 /*-----------------------------------------------------------Fin Auxiliares-----------------------------------------------------------*/
