@@ -98,6 +98,7 @@ function altaAlumno(oEvento)
 /*-----------------------------------------------------------Auxiliares-----------------------------------------------------------*/
 function validaciones(oForm)
 {
+	//TODO
 	var bValido=true;
 	for(var i=1;i<oForm.elements.length-1;i++)
 	{
@@ -113,8 +114,10 @@ function mensajeError(oForm)
 {
 	var sError="";
 	
-	
-	
+	//TODO
+	/*
+		
+	*/
 	
 	
 	toastr.options = {
