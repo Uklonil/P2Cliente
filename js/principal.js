@@ -70,7 +70,7 @@ function mostrarBaja(oEvento) {
 
 	ocultarFormularios()
 
-	var oE = oEvento || window.event;     // Guarda el Objeto que ha disparado el evento
+	var oE = oEvento || window.event;     // Guarda el Objeto que ha disparado el eventoa
 	if (oE.target == oE.currentTarget) { //el objetivo del evento al que le has registrado el evento es el mismo
 
 		var oFormu = document.getElementById("forBajAlum");
