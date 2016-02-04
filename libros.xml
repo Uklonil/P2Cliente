@@ -1,0 +1,17 @@
+<libros>
+	<libro id="1">
+		<titulo>First</titulo>
+		<autor>Smith</autor>
+		<editorial>Planeta</editorial>
+	</libro>
+	<libro id="2">
+		<titulo>Deux</titulo>
+		<autor>Poirot</autor>
+		<editorial>Mundo</editorial>
+	</libro>
+	<libro id="3">
+		<titulo>Drei</titulo>
+		<autor>Kafka</autor>
+		<editorial>Planeta</editorial>
+	</libro>
+</libros>

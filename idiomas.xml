@@ -1,0 +1,17 @@
+﻿<idiomas>
+	<idioma id="1">
+		<nombre>Inglés</nombre>
+		<nivel>B1</nivel>
+		<libro>1</libro>
+	</idioma>
+	<idioma id="2">
+		<nombre>Francés</nombre>
+		<nivel>A2</nivel>
+		<libro>2</libro>
+	</idioma>
+	<idioma id="3">
+		<nombre>Alemán</nombre>
+		<nivel>B1</nivel>
+		<libro>3</libro>
+	</idioma>
+</idiomas>
